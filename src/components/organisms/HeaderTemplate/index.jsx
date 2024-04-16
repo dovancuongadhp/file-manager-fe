@@ -1,11 +1,10 @@
 import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
 import { Button, Layout } from "antd";
 
-const { Header } = Layout;
 function HeaderTemplate({onCollapsed, isCollapse, colorBgContainer}) {
   
   return (
-    <Header style={{ padding: 0, background: colorBgContainer }}>
+    <Layout.Header style={{ padding: 0, background: colorBgContainer }}>
       <Button
         type="text"
         icon={isCollapse ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
@@ -16,7 +15,7 @@ function HeaderTemplate({onCollapsed, isCollapse, colorBgContainer}) {
           height: 64,
         }}
       />
-    </Header>
+    </Layout.Header>
   );
 }
 

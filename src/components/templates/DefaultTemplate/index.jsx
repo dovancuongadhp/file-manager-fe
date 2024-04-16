@@ -3,7 +3,7 @@ import { Layout, theme } from "antd";
 import SiderTemplate from "../../organisms/SiderTemplate";
 import HeaderTemplate from "../../organisms/HeaderTemplate";
 import { useEffect, useState } from "react";
-const { Content } = Layout;
+
 function DefaultTemplate() {
   const [collapsed, setCollapsed] = useState(
     localStorage.getItem("collapsed") === "true" ? true : false
@@ -28,7 +28,7 @@ function DefaultTemplate() {
             colorBgContainer={colorBgContainer}
             />
           <div className="default_template_content">
-            <Content
+            <Layout.Content
               style={{
                 margin: "24px 16px",
                 padding: 24,
@@ -38,7 +38,7 @@ function DefaultTemplate() {
               }}
             >
               <Outlet />
-            </Content>
+            </Layout.Content>
           </div>
         </Layout>
       </Layout>

@@ -37,13 +37,13 @@ function SiderTemplate({ isCollapse }) {
       trigger={null}
       collapsible
       collapsed={isCollapse}
-      theme="dark"
+      theme="light"
     >
       <div className="demo-logo-vertical">
         {isCollapse ? <FileFilled /> : <h3>File Manager</h3>}
       </div>
       <Menu
-        theme="dark"
+        theme="light"
         mode="inline"
         defaultSelectedKeys={[currentPath]}
         items={getMenus(navigationMenu)}

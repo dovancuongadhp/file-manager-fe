@@ -19,7 +19,7 @@ function DefaultTemplate() {
 
   return (
     <div id="default_template">
-      <Layout style={{ minHeigh: "100vh"}} hasSider>
+      <Layout style={{ minHeight: "100vh"}} hasSider>
         <SiderTemplate isCollapse={collapsed} />
         <Layout>
           <HeaderTemplate 

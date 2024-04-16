@@ -30,11 +30,11 @@ function DefaultTemplate() {
           <div className="default_template_content">
             <Layout.Content
               style={{
-                margin: "24px 16px",
+                // margin: "24px 16px",
                 padding: 24,
                 minHeight: 280,
-                background: colorBgContainer,
-                borderRadius: borderRadiusLG,
+                // background: colorBgContainer,
+                // borderRadius: borderRadiusLG,
               }}
             >
               <Outlet />

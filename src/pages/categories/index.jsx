@@ -1,19 +1,19 @@
-import React, { useEffect } from 'react'
-import { getCategoryList } from "@api/category";
+import ToolBar from "@components/organisms/ToolBar";
+import { Card, Button } from "antd";
+import { useState } from "react";
 
 function Categories() {
-
-  // function getDataCategories(){
-  //   const data = getCategoryList();
-  //   console.log(data)
-  // }
-
-  // useEffect(() => {
-  //   getDataCategories()
-  // }, [])
+  const [isActive, setIsActive] = useState(false)
   return (
-    <div>Categories</div>
-  )
+    <div>
+      {isActive&&<ToolBar />}
+      <br />
+      <Card>
+        <h1>Categories</h1>
+        <Button onClick={()=>setIsActive(!isActive)}>Toolbar</Button>
+      </Card>
+    </div>
+  );
 }
 
-export default Categories
+export default Categories;

@@ -1,10 +1,17 @@
 import { NavLink } from "react-router-dom";
-import routes from "../../../routes/routes";
+import navigationMenu from "../../../routes/navigationMenu";
 import { Layout, Menu } from "antd";
 import { FileFilled } from "@ant-design/icons";
-
 function SiderTemplate({ isCollapse }) {
   const currentPath = window.location.pathname;
+  // function getItem(label, key, icon, children) {
+  //   return {
+  //     key,
+  //     icon,
+  //     children,
+  //     label,
+  //   };
+  // }
   return (
     <Layout.Sider
       trigger={null}
@@ -19,7 +26,7 @@ function SiderTemplate({ isCollapse }) {
         theme="light"
         mode="inline"
         defaultSelectedKeys={[currentPath]}
-        items={routes?.map((item) => ({
+        items={navigationMenu?.map((item) => ({
           key: item.path,
           icon: <item.icon />,
           label: <NavLink to={item?.path}> {item.label}</NavLink>,

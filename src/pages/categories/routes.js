@@ -1,14 +1,20 @@
 import DefaultTemplate from "@components/templates/DefaultTemplate"
 import Categories from "./index"
-import {AppstoreOutlined } from '@ant-design/icons'
-const routes_category = [
+import CategoryRecent from "./recent"
+const routes_categories = [
     {
         id: "categories",
-        label: "Categories",
-        icon: AppstoreOutlined,
         path: "/categories",
         element: Categories,
-        template: DefaultTemplate
+        template: DefaultTemplate,
+       
+    },
+    {
+        id: "categories_recent",
+        path: "/categories/recent",
+        element: CategoryRecent,
+        template: DefaultTemplate,
+       
     }
 ]
-export default routes_category
+export default routes_categories

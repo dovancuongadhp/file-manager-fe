@@ -8,7 +8,7 @@ function DefaultTemplate() {
   const [collapsed, setCollapsed] = useState(
     localStorage.getItem("collapsed") === "true" ? true : false
   );
-  const { token: { colorBgContainer, borderRadiusLG }} = theme.useToken();
+  const { token: { colorBgContainer }} = theme.useToken();
 
   function handleCollapsed() {
     setCollapsed(!collapsed);
@@ -19,7 +19,7 @@ function DefaultTemplate() {
 
   return (
     <div id="default_template">
-      <Layout style={{ height: "100vh"}} hasSider>
+      <Layout style={{ minHeigh: "100vh"}} hasSider>
         <SiderTemplate isCollapse={collapsed} />
         <Layout>
           <HeaderTemplate 
@@ -32,7 +32,7 @@ function DefaultTemplate() {
               style={{
                 // margin: "24px 16px",
                 padding: 24,
-                minHeight: 280,
+                // minHeight: 280,
                 // background: colorBgContainer,
                 // borderRadius: borderRadiusLG,
               }}

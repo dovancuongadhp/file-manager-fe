@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { getCategoryList } from '../../api/category';
+import { getCategoryList } from "@api/category";
 
 function Categories() {
 

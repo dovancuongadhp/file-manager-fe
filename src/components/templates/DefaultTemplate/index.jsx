@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import { Layout, theme } from "antd";
-import SiderTemplate from "../../organisms/SiderTemplate";
-import HeaderTemplate from "../../organisms/HeaderTemplate";
+import SiderTemplate from "@components/organisms/SiderTemplate";
+import HeaderTemplate from "@components/organisms/HeaderTemplate";
 import { useEffect, useState } from "react";
 
 function DefaultTemplate() {

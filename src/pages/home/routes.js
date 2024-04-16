@@ -1,5 +1,5 @@
 import Home from "./index"
-import DefaultTemplate from "../../components/templates/DefaultTemplate"
+import DefaultTemplate from "@components/templates/DefaultTemplate"
 import { HomeOutlined } from "@ant-design/icons"
 const routes_home = [
     {

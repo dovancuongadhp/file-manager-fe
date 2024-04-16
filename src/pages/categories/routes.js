@@ -1,4 +1,4 @@
-import DefaultTemplate from "../../components/templates/DefaultTemplate"
+import DefaultTemplate from "@components/templates/DefaultTemplate"
 import Categories from "./index"
 import {AppstoreOutlined } from '@ant-design/icons'
 const routes_category = [

@@ -4,12 +4,15 @@ const navigation_category = [
         id: "categories",
         label: "Categories",
         icon: AppstoreOutlined,
-        path: "/categories",
         children: [
+            {
+                id: "categories_list",
+                label: "Categories List",
+                path: "/categories",
+            },
             {
                 id: "categories_recent",
                 label: "Recent",
-                icon: AppstoreOutlined,
                 path: "/categories/recent",
             }
         ]
